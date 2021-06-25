@@ -1,10 +1,10 @@
-/* Fonts  */
+/* Fonts  ---- */
 @font-face {
   font-family: 'Big Shoulders Stencil Display', cursive, 'Raleway', sans-serif;
   src: url('../fonts/Raleway-BlackItalic.ttf') url('../fonts/BigShouldersStencilDisplay-Black.ttf') format('tff');
 }
 
-/* Base Styles */
+/* Base Styles ---- */
 * {
   box-sizing: border-box;
 }
@@ -34,8 +34,7 @@ img {
   border-radius: 20px;
 }
 
-
-/* Main Styles --------------------- */
+/* Main Styles ---- */
 header {
   padding: 10vh 1rem;
   margin: -1rem -1rem 1rem;
@@ -46,6 +45,10 @@ header {
 header, footer {
   text-align: center;
 }
+
+footer {
+  padding: 10vh 1rem;
+}
 .title {
   letter-spacing: 1px;
 }
@@ -53,15 +56,34 @@ main {
   hyphens: auto;
 }
 #worker {
-  padding: 20% 15%;
-  border-top: 12px solid #2e09b1;
-  border-radius: 12px 12px 0 0;
-  background: url(../img/backsplash.jpg) center / cover #243c9e;
+  padding: 10% 6%;
+  border-top: 10px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
+  border-radius: 12px 12px 12px 12px;
+  background: url(../img/backsplash.jpg) center / cover;
   color: black;
   box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
 }
 
-/* Form Fields -------------------- */
+#nujabes {
+  margin-top: 10px;
+  padding: 10% 6%;
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
+  border-radius: 12px 12px 12px 12px;
+  background: url(../img/woodwork.jpg) center / cover;
+  color: whitesmoke;
+  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+}
+#jdilla {
+  margin-top: 20px;
+  padding: 10% 6%;
+  border-radius: 12px 12px 12px 12px;
+  color: whitesmoke;
+  background-color: black;
+}
+
+/* Contact Forms ---- */
 input,
 textarea {
   font-size: 1em;
@@ -89,25 +111,41 @@ label {
   cursor: pointer;
   font-size: .875em;
   font-weight: 300;
-  color: darkslategrey;
+  color: whitesmoke;
+  background-color: darkslategray;
+  margin-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 3rem;
   text-transform: uppercase;
 }
 
-.hidden {
+.hidden{
   display: none;
+}
+
+.tab-container{
+  border: solid black 1px;
+  cursor: pointer;
 }
 
 /* Media Queries ------------------- */
 @media screen and (min-width: 720px) {
   header {
-    padding: 20vh 1rem;
+    padding: 12vh 1rem;
   }
   .column {
     display: inline-block;
     width: 48%;
     margin-right: -4px;
+    padding: 20% 15%;
+    border-top: 5px solid darkslategray;
+    border-bottom: 5px solid darkslategray;
+    border-radius: 12px 12px 12px 12px;
+    color: black;
+    box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+    align-items: flex-end;
+    flex-basis: 0;
   }
   .column:first-child {
     margin-right: calc(4% - 4px);
@@ -123,13 +161,22 @@ label {
   .inln {
     width: auto;
     display: inline-block;
+    background-color: darkslategray;
+    border-color: darkslategray ;
+    cursor: pointer;
+    color: whitesmoke;
+    font: 400px 1.75rem 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
   }
-
-  .hidden{
-    display: none;
+}
+  @media (min-width: 769px) {
+    .clicktab {
+    width: auto;
+    display: inline-block;
+    background-color: black;
+    border-color: darkslategray ;
+    cursor: pointer;
+    color: whitesmoke;
+    font: 1.75rem 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
+    font-weight: bold;
   }
-
-  .tab-container{
-    border: solid black 1px;
-
-  }
+}

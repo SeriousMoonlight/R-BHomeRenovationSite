@@ -20,18 +20,13 @@
   <main>
     <section>
       <div class="tab">
-        <button class="inln" onclick="setPage('Home')">Home</button>
-        <button class="inln" onclick="setPage('Gallery')">Gallery</button>
-        <button class="inln" onclick="setPage('Contact')">Contact</button>
-
+        <button class="clicktab" onclick="setPage('Home')">Home</button>
+        <button class="clicktab" onclick="setPage('Gallery')">Gallery</button>
+        <button class="clicktab" onclick="setPage('Contact')">Contact</button>
+    
     <section class="tab container">
-      <div id="tab1" class="hidden">Home</div>
-      <div id="tab2" class="hidden">Gallery</div>
-      <div id="tab3" class="hidden">Contact</div>
-    </section>
-      <div id="Home" class="tabcontent">
-        <h3>Home</h3>
-        <p>Welcome to our site! See below for more about us!</p>
+      <div id="tab1" id="Home" class="hidden" class="tabcontent">
+        <h3>Welcome to our site! See below for more about us!</h3>
         <section>
           <div id="worker">
             <h2>Skilled Handymen</h2>
@@ -39,14 +34,12 @@
           </div>
         </section>
         <section>
-          <div class="column">
-            <img src="img/woodwork.jpg" alt="Woodwork">
+          <div class="column" id="nujabes">
             <h3>We Have The Tools!</h3>
             <p>Lacking the tools or experience to bring your dreams of renovation to life? No worries! You provide the materials and we have all the equipment needed to make that a reality.</p>
           </div>
-         
-          <div class="column">
-            <img src="img/tools2.jpg" alt="Tools">
+          
+          <div class="column" id="jdilla">
             <h3>Services Available</h3>
             <p>We can assist you in blueprinting and bringing your ideas to life at without breaking the bank. Our areas of expertise include:</p>
             <ol>
@@ -54,44 +47,81 @@
               <li>Flooring</li>
               <li>Painting</li>
               <li>Installation</li>
+              <li>Electrical</li>
             </ol>
           </div>
-        </section>
+        </section> 
       </div>
-      
-      <section>
-      <div id="Gallery" class="tabcontent">
-        <h3>Gallery</h3>
-        <p>Please browse the gallery of our various work!</p>
-      </div>
-      </section>
-      
-      <div id="Contact" class="tabcontent">
-        <h3>Contact Us</h3>
-        <p>Have any questions regarding rates or need a job done? Feel free to inquire Simon or Mich'l in the form below!</p>          
+    </div>
+      <div id="tab2" id="Gallery" class="hidden" class="tabcontent"><section>
+        <div>
+          <h3>A Sample of before and after photos of our various work!</h3>
+          <section>
+            <div class="column">
+              <img src="img/pantrya.jpg" alt="PantryA">
+              <h3>We took an empty storage space (Before)</h3>
+            </div>
+           
+            <div class="column">
+              <img src="img/pantryb.jpg" alt="PantryB">
+              <h3>And transformed it to a walk-in pantry! ("After")</h3>
+            </div>
+          </div>
+          <section>
+            <div class="column">
+              <img src="img/halfbathb.jpg" alt="HalfBathB">
+              <h3>Half Bath with new floor tiles ("Before")</h3>
+            </div>
+           
+            <div class="column">
+              <img src="img/halfbatha.jpg" alt="HalfBathA">
+              <h3>And fitted with a new toilet and a sink! ("After")</h3>
+            </div>
+          </section>
+          <section>
+            <div class="column">
+              <img src="img/newrooma.jpg" alt="NewRoomA">
+              <h3>A Basement utility room...</h3>
+            </div>
+           
+            <div class="column">
+              <img src="img/newroomb.jpg" alt="NewRoomB">
+              <h3>...Converted into a kitchen and a living space made from scratch</h3>
+            </div>
+            <section>
+              <div class="column">
+                <img src="img/bathroomb.gif" alt="BathroomB">
+                <h3>New Bathroom Tiles and New Light Fixtures (Before)</h3>
+              </div>
+             
+              <div class="column">
+                <img src="img/bathrooma.jpg" alt="BathroomA">
+                <h3>And After!</h3>
+              </div>
+            </section>
+          </div>
+      <div id="tab3" class="hidden"> <div id="Contact" class="tabcontent">
+        <h3>Have any questions regarding rates or need a job done? Feel free to inquire Simon or Mich'l in the form below!</h3>      
           <div id="container">
             <form class="form-contact">
-        
               <label for="name">Name:</label> 
-              <input type="text" id="name">
+              <input type="text" id="name" placeholder="First and Last Name">
         
                <label for="email">Email:</label>
-               <input type="email" id="email" placeholder="email@website.com">
+               <input type="email" id="email" placeholder="Your Email Address">
           
                <label for="msg">Message:</label>
-               <textarea id="msg" rows="7"></textarea>
-        
-               <input class="btn inln default" type="submit" value="Submit">
+               <textarea id="msg" rows="5" placeholder="Enter Message"></textarea>
+               <input class="btn inln default"  onclick="myFunction()" type="submit" value="Submit">
             </form>
-        </p>
-      </div>
+       </div>
     </section>
   </main>
 
   <script src="js/script.js"></script>
   
   <footer class="main-footer">
-    <p>All rights reserved by Monday Dads LLC<Span>&</Span></p>
+    <p>All rights reserved by Monday Dads LLC<Span>&#169;</Span></p>
     <a href="#top">Back to top &raquo;</a>
   </footer>
  </body>
