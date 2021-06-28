@@ -29,8 +29,9 @@ h2 {
 }
 h3 {
   font-size: 1.15rem;
-  font-weight: 400px lighter;
+  font-weight: 300px bold;
   text-decoration: underline;
+  text-align: left;
 }
 h4 {
   font: 1.5rem;
@@ -44,16 +45,15 @@ img {
 header {
   padding: 10vh 1rem;
   margin: -1rem -1rem 1rem;
-  background: url(../img/saw.jpg) center / cover no-repeat darkslategray;
+  background: url(../img/saw.jpg) center / cover no-repeat darkslategray; 
   background-blend-mode: multiply;
   color: white;
 }
 header, footer {
   text-align: center;
 }
-
 footer {
-  padding: 10vh 1rem;
+  padding: 10vh;
 }
 .title {
   letter-spacing: 1px;
@@ -61,44 +61,7 @@ footer {
 main {
   hyphens: auto;
 }
-#worker {
-  padding: 10% 6%;
-  border-top: 10px solid darkslategray;
-  border-bottom: 5px solid darkslategray;
-  border-radius: 12px 12px 12px 12px;
-  background: url(../img/backsplash.jpg) center / cover;
-  color: black;
-  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
-}
 
-#nujabes {
-  margin-right: 1vh;
-  margin-top: 0rem;
-  padding: 10% 6%;
-  background: url(../img/woodwork.jpg) center / cover;
-  color: whitesmoke;
-  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
-}
-#jdilla {
-  margin-top: 20px;
-  margin: 1vh;
-  padding: 10% 6%;
-  border-radius: 12px 12px 12px 12px;
-  color: whitesmoke;
-  background-color: black;
-}
-
-#contactimg {
-  font: bold;
-  margin-top: 2vh;
-  padding: 5% 3%;
-  border-top: 5px solid darkslategray;
-  border-bottom: 5px solid darkslategray;
-  border-radius: 12px 12px 12px 12px;
-  background: url(../img/tools2.jpg) center / cover;
-  color: black;
-  box-shadow: inset 0 0 10px 10px rgba(0,10,30,.8);
-}
 /* Contact Forms ---- */
 input,
 textarea {
@@ -120,6 +83,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 0.5em; 
+  font-weight: bold;
 }
 
 /* Classes */
@@ -145,6 +109,85 @@ label {
   cursor: pointer;
 }
 
+.row {
+  flex-direction:row;
+}
+
+#worker {
+  padding: 8% 6%;
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
+  border-radius: 0 12px 12px 12px;
+  background: url(../img/backsplash.jpg) center / cover;
+  color: black;
+  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+}
+
+#aboutus {
+  margin-right: 1vh;
+  margin-top: 1rem;
+  padding: 5% 6%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/metal.jpg) center / cover;
+  border-radius: 12px 12px 12px 12px;
+  color: whitesmoke;
+  text-shadow: black bold;
+  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+}
+
+#crew {
+  margin-right: 1vw;
+  margin-top: 1rem;
+  padding: 3% 6%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/tools.jpg) center / cover;
+  border-radius: 12px 12px 12px 12px;
+  color: whitesmoke;
+  text-shadow: black bold;
+  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+}
+
+#services {
+  padding: 2% 6%;
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
+  border-radius: 12px 12px 12px 12px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/woodwork.jpg) center / cover;
+  color: whitesmoke;
+  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+  font-weight: bold;
+}
+
+#contactimg {
+  text-align: justify;
+  font: bold;
+  padding: 4% 6%;
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
+  border-radius: 0 12px 12px 12px;
+  background: url(../img/tools2.jpg) center / cover;
+  color: black;
+  box-shadow: inset 0 0 10px 10px rgba(0,0,0,.8);
+}
+div.gallery {
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
+  border-radius: 0 12px 12px 12px;
+}
+
+div.gallery:hover {
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
+  border-radius: 0 12px 12px 12px;
+}
+
+div.gallery img {
+  width: 20%;
+  height: 400px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 /* Media Queries ---- */
 @media screen and (min-width: 720px) {
   header {
@@ -155,13 +198,13 @@ label {
     width: 48%;
     margin-right: -4px;
     padding: 20% 15%;
+    background-color: black;
     border-top: 5px solid darkslategray;
     border-bottom: 5px solid darkslategray;
-    border-radius: 12px 12px 12px 12px;
-    color: black;
+    border-radius: 0 12px 12px 12px;
+    color: whitesmoke;
     box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
-    align-items: flex-end;
-    flex-basis: 0;
+    align-items: center;
   }
   .column:first-child {
     margin-right: calc(4% - 4px);
@@ -170,7 +213,7 @@ label {
 }
 @media (max-width: 768px) {
 	#container {
-		width: 92%;
+		width: 92%
 	}
 }
 @media (min-width: 769px) {
@@ -187,7 +230,7 @@ label {
   @media (min-width: 70px) {
     .clicktab {  
     text-decoration: underline;  
-    padding-block: 10px;
+    padding-block: 10px 10px;
     flex-wrap: wrap;
     width: auto;
     display: inline-block;
@@ -199,3 +242,24 @@ label {
     font-weight: bold;
   }
 }
+
+.responsive {
+  padding: 30px 6px;
+  padding-bottom: 100px;
+  float: left;
+  width: 25%;
+}
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 50%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
