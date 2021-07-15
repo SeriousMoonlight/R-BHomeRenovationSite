@@ -1,10 +1,12 @@
 /* Fonts  ---- */
+
 @font-face {
   font-family: 'Big Shoulders Stencil Display', cursive, 'Raleway', sans-serif;
   src: url('../fonts/Raleway-BlackItalic.ttf') url('../fonts/BigShouldersStencilDisplay-Black.ttf') format('tff');
 }
 
 /* Base Styles ---- */
+
 * {
   box-sizing: border-box;
 }
@@ -63,6 +65,7 @@ main {
 }
 
 /* Contact Forms ---- */
+
 input,
 textarea {
   font-size: 1em;
@@ -87,6 +90,7 @@ label {
 }
 
 /* Classes */
+
 .btn {
   cursor: pointer;
   font-size: .875em;
@@ -110,23 +114,25 @@ label {
 }
 
 .row {
-  flex-direction:row;
+  flex-direction: row;
 }
 
 #worker {
-  padding: 8% 6%;
+  margin-top: 1rem;
+  padding: 7% 6%;
   border-top: 5px solid darkslategray;
   border-bottom: 5px solid darkslategray;
-  border-radius: 0 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
   background: url(../img/backsplash.jpg) center / cover;
   color: black;
   box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
 }
 
 #aboutus {
-  margin-right: 1vh;
   margin-top: 1rem;
-  padding: 5% 6%;
+  padding: 3% 6%;
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/metal.jpg) center / cover;
   border-radius: 12px 12px 12px 12px;
   color: whitesmoke;
@@ -135,9 +141,11 @@ label {
 }
 
 #crew {
-  margin-right: 1vw;
+  
   margin-top: 1rem;
-  padding: 3% 6%;
+  padding: 2% 6%;
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/tools.jpg) center / cover;
   border-radius: 12px 12px 12px 12px;
   color: whitesmoke;
@@ -145,35 +153,19 @@ label {
   box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
 }
 
-#services {
-  padding: 2% 6%;
-  border-top: 5px solid darkslategray;
-  border-bottom: 5px solid darkslategray;
-  border-radius: 12px 12px 12px 12px;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/woodwork.jpg) center / cover;
-  color: whitesmoke;
-  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
-  font-weight: bold;
-}
-
 #contactimg {
+  margin-top: 1rem;
   text-align: justify;
   font: bold;
   padding: 4% 6%;
   border-top: 5px solid darkslategray;
   border-bottom: 5px solid darkslategray;
-  border-radius: 0 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
   background: url(../img/tools2.jpg) center / cover;
   color: black;
   box-shadow: inset 0 0 10px 10px rgba(0,0,0,.8);
 }
 div.gallery {
-  border-top: 5px solid darkslategray;
-  border-bottom: 5px solid darkslategray;
-  border-radius: 0 12px 12px 12px;
-}
-
-div.gallery:hover {
   border-top: 5px solid darkslategray;
   border-bottom: 5px solid darkslategray;
   border-radius: 0 12px 12px 12px;
@@ -187,12 +179,19 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  background-color: black;
+  border-top: 5px solid darkslategray;
+  border-bottom: 5px solid darkslategray;
+  border-radius: 12px 12px 12px 12px;
 }
+
 /* Media Queries ---- */
+
 @media screen and (min-width: 720px) {
   header {
     padding: 12vh 1rem;
   }
+  
   .column {
     display: inline-block;
     width: 48%;
@@ -211,12 +210,12 @@ div.desc {
     margin-bottom: 0;
   }
 }
-@media (max-width: 768px) {
+@media screen (max-width: 768px) {
 	#container {
 		width: 92%
 	}
 }
-@media (min-width: 769px) {
+@media (min-width: 480px) {
   .inln {
     width: auto;
     display: inline-block;
@@ -231,7 +230,6 @@ div.desc {
     .clicktab {  
     text-decoration: underline;  
     padding-block: 10px 10px;
-    flex-wrap: wrap;
     width: auto;
     display: inline-block;
     background-color: black;
@@ -250,7 +248,7 @@ div.desc {
   width: 25%;
 }
 
-  @media only screen and (max-width: 700px) {
+  @media screen (max-width: 768px) {
     .responsive {
       width: 50%;
       margin: 6px 0;
