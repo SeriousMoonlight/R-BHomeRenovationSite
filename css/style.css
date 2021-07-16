@@ -91,6 +91,16 @@ label {
 
 /* Classes */
 
+.tab-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .btn {
   cursor: pointer;
   font-size: .875em;
@@ -191,7 +201,6 @@ div.desc {
   header {
     padding: 12vh 1rem;
   }
-  
   .column {
     display: inline-block;
     width: 48%;
@@ -206,8 +215,8 @@ div.desc {
     align-items: center;
   }
   .column:first-child {
+    justify-content: space-evenly;
     margin-right: calc(4% - 4px);
-    margin-bottom: 0;
   }
 }
 @media screen (max-width: 768px) {
@@ -215,6 +224,7 @@ div.desc {
 		width: 92%
 	}
 }
+
 @media (min-width: 480px) {
   .inln {
     width: auto;
