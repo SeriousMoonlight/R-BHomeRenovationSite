@@ -44,6 +44,7 @@ img {
 }
 
 /* Main Styles ---- */
+
 header {
   padding: 10vh 1rem;
   margin: -1rem -1rem 1rem;
@@ -62,6 +63,12 @@ footer {
 }
 main {
   hyphens: auto;
+}
+.responsive {
+  padding: 30px 6px;
+  padding-bottom: 100px;
+  float: left;
+  width: 25%;
 }
 
 /* Contact Forms ---- */
@@ -123,9 +130,7 @@ label {
   cursor: pointer;
 }
 
-.row {
-  flex-direction: row;
-}
+/* Card Elements */ 
 
 #worker {
   margin-top: 1rem;
@@ -204,7 +209,6 @@ div.desc {
   .column {
     display: inline-block;
     width: 48%;
-    margin-right: -4px;
     padding: 20% 15%;
     background-color: black;
     border-top: 5px solid darkslategray;
@@ -212,13 +216,13 @@ div.desc {
     border-radius: 0 12px 12px 12px;
     color: whitesmoke;
     box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
-    align-items: center;
   }
   .column:first-child {
     justify-content: space-evenly;
     margin-right: calc(4% - 4px);
   }
-}
+}  
+
 @media screen (max-width: 768px) {
 	#container {
 		width: 92%
@@ -236,6 +240,7 @@ div.desc {
     font: 400px 1.75rem 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
   }
 }
+
   @media (min-width: 70px) {
     .clicktab {  
     text-decoration: underline;  
@@ -251,19 +256,12 @@ div.desc {
   }
 }
 
-.responsive {
-  padding: 30px 6px;
-  padding-bottom: 100px;
-  float: left;
-  width: 25%;
-}
-
-  @media screen (max-width: 768px) {
+@media screen (max-width: 768px) {
     .responsive {
-      width: 50%;
-      margin: 6px 0;
-    }
+    width: 50%;
+    margin: 6px 0;
   }
+}
   
   @media only screen and (max-width: 500px) {
     .responsive {

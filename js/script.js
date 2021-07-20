@@ -45,5 +45,7 @@ tab3.classList.toggle("hidden")
 /* Submit Button ---- */ 
 
 function myFunction() {
-  alert("Sorry! We are not currently taking inquiries yet. Coming Soon!");
+  var inputVal = document.getElementById("name").value;
+  alert("Sorry! We are not currently taking inquiries yet. Please come back soon " +inputVal);
 }
+
