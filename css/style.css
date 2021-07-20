@@ -98,11 +98,6 @@ label {
 
 /* Classes */
 
-.tab-btn {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -229,6 +224,19 @@ div.desc {
 	}
 }
 
+@media screen and (min-width: 480px) {
+  .tab-btn {
+    display: inline;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .tab-btn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+} 
 @media (min-width: 480px) {
   .inln {
     width: auto;
