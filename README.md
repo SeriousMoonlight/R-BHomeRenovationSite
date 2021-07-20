@@ -62,5 +62,5 @@ it changed as I troubleshooted my issues and implementing the various things I l
         LICENSING/USAGE
 -------------------------------
 
-This site was made entirely with VS Code, images provided by THE Richardson of the website's namesake, a lots of support from friends and family.
+This site was made entirely in VS Code, images in the gallery are provided by THE Richardson of the website's namesake and the images that make up the card backgrounds on the Home and Contact pages are royalty-free images provided by Unsplash as temporary placeholder images. 
 This is public domain and no charges or legal issues will arise from pulling from this repository however if please contact me regarding pull requests! Thank you for reading.
