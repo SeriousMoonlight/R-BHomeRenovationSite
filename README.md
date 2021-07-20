@@ -1,6 +1,7 @@
 WELCOME TO THE RICHARDSON & BANKS WEBSITE REPO 
 MADE BY BRANDEN THOMAS
 
+https://st.depositphotos.com/1734074/2336/v/600/depositphotos_23367726-stock-illustration-bulldog-sherlock.jpg
 ------------------------------
         INTRODUCTION
 ------------------------------
