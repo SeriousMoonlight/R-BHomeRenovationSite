@@ -36,15 +36,15 @@ This also serves as the final project of my first semester in Code Louisville. I
 - Clickable button tabs that that hide/show specific sections of the site and realign for both mobile and desktop layouts. (JavaScript/Media Query)
 - Contact Form that while inactive, will at the very least provide a personalized response with your name in the Name Entry Field as an alert message. (JavaScript)
 - More than 5 commits to the project repository using GitBash were made. (Fun fact: The first commit took 2 hours to troubleshoot. Now it takes 2 minutes to make a push!)
-- Whole site can be navigated with the keyboard which is a small consideration for accessibility 
+- Homepage card background images are dimmed for easier readability and gives them some style.
+- Whole site can be navigated with the keyboard which is a small consideration for accessibility.
   (Back to top link available at the bottom of the page for easier navigation back to top tabs as well)
 
 ------------------------------
            CONTENT
 ------------------------------
 
-- A home page with a banner with a mission statement, about us and insight on the crew and what services are available with some jazzed up cards with dimmed background images
-for easier to read text. 
+- A home page features cards containing a mission statement, about us and insight on the crew and what services are available.
 - A sample gallery featuring some before and after pictures of some of the amazing work my dudes do!
 - A simple contact form for inquiries.
 - Back to Top button at the bottom for some ompany name and copyright "watermark" 
