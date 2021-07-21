@@ -10,34 +10,41 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 1.25em;
   background: linear-gradient(90deg, gray, black); 
 }
+
 body {
   margin: 1rem;
   font: 300 100%/1.5 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
   color: whitesmoke;
 }
+
 h1, h2 {
   font: 400 4rem/1.1 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
 }
+
 h1 {
   text-shadow: 1px 2px 3px rgba(0,10,30,.5);
 }
+
 h2 {
   font-size: 2.5rem;
   text-decoration: underline;
 }
+
 h3 {
   font-size: 1.15rem;
   font-weight: 300px bold;
   text-decoration: underline;
-  text-align: left;
 }
+
 h4 {
   font: 1.5rem;
 }
+
 img {
   width: 100%; /* responsive images */
   border-radius: 20px;
@@ -52,18 +59,23 @@ header {
   background-blend-mode: multiply;
   color: white;
 }
+
 header, footer {
   text-align: center;
 }
+
 footer {
   padding: 10vh;
 }
+
 .title {
   letter-spacing: 1px;
 }
+
 main {
   hyphens: auto;
 }
+
 .responsive {
   padding: 30px 6px;
   padding-bottom: 100px;
@@ -175,6 +187,7 @@ label {
   color: black;
   box-shadow: inset 0 0 10px 10px rgba(0,0,0,.8);
 }
+
 div.gallery {
   border-top: 5px solid darkslategray;
   border-bottom: 5px solid darkslategray;
@@ -201,6 +214,7 @@ div.desc {
   header {
     padding: 12vh 1rem;
   }
+
   .column {
     display: inline-block;
     width: 48%;
@@ -237,6 +251,7 @@ div.desc {
     justify-content: space-evenly;
   }
 } 
+
 @media (min-width: 480px) {
   .inln {
     width: auto;
@@ -253,7 +268,6 @@ div.desc {
     .clicktab {  
     text-decoration: underline;  
     padding-block: 10px 10px;
-    width: auto;
     display: inline-block;
     background-color: black;
     border-color: darkslategray ;
@@ -264,13 +278,6 @@ div.desc {
   }
 }
 
-@media screen (max-width: 768px) {
-    .responsive {
-    width: 50%;
-    margin: 6px 0;
-  }
-}
-  
   @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
