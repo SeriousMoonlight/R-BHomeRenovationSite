@@ -267,7 +267,8 @@ div.desc {
   @media (min-width: 70px) {
     .clicktab {  
     text-decoration: underline;  
-    padding-block: 10px 10px;
+    padding: 12px;
+    border-radius: 3rem;
     display: inline-block;
     background-color: black;
     border-color: darkslategray ;
