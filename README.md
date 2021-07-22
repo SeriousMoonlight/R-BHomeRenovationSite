@@ -39,6 +39,7 @@ This also serves as the final project of my first semester in Code Louisville. I
 - Homepage card background images are dimmed for easier readability and gives them some style.
 - Whole site can be navigated with the keyboard which is a small consideration for accessibility.
   (Back to top link available at the bottom of the page for easier navigation back to top tabs as well)
+- The site can be viewed via https://seriousmoonlight.github.io/R-BHomeRenovationSite/ as well.
 
 ------------------------------
            CONTENT
