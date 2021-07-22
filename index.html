@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richardson & Banks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="javascript" href="js/script.js">
+</head>
+<body onload="onload()">
+  
+  <header id="top">
+    <h1>Richardson & Banks</h1>
+    <span class="title">Affordable Home Renovation</span>
+  </header>
+  
+  <main>
+    <section>
+      <div class="tab">
+
+        <div class="tab-btn">
+        <button class="clicktab" onclick="setPage('Home')">Home</button>
+        <button class="clicktab" onclick="setPage('Gallery')">Gallery</button>
+        <button class="clicktab" onclick="setPage('Contact')">Contact</button>
+        </div>
+        
+   <!--Home Page Top Banner-->
+
+    <section class="tab container">
+      <div id="tab1" id="Home" class="hidden" class="tabcontent">
+        <section>
+          <div id="worker">
+            <h2>Skilled Handymen</h2>
+            <p>Lacking the tools or experience to bring your dreams of renovation to life? No worries! You provide the materials and we have all the equipment needed to make that a reality. 
+              Whether you're looking to do some interior remodeling or need a hole patched in the roof, we have you covered on a multitude of home renovation needs at competitive prices.</p>
+          </div>
+        </section>
+
+    <!-- Two Column Cards of Tertiary Information -->
+
+        <section>
+          <div class="cards">
+          <div class="column" id="aboutus">
+            <h2>About Us</h2>
+            <p>During the pandemic, we saw an opportunity to not only grow our skill set but to also pursue our passion. As we found our niche in home renovation, we see every job as a puzzle to be solved and we welcome the challenge to fulfill not only our customers needs but to grow ourselves.</p>
+          </div>
+ 
+          <div class="column" id="crew">
+            <h2>Meet The Crew and Services Available</h2>
+            <p><strong>Mich'l Richardson</strong></p><p>Field of Expertise: Woodwork, Flooring, Roofing, Installation</p>
+            <p><strong>Simon Banks</strong></p><p>Field of Expertise: Electrical Work, Painting, Metal Work, Blueprinting</p>
+          </div>
+        </div>
+        </section> 
+    </div>
+
+    <!--Gallery-->
+
+    <div id="tab2" id="gallery" class="hidden" class="tabcontent">
+      <section>
+        <div>
+          <div class="responsive">
+            <a target="_blank" href="img/newrooma.jpg">
+              <img src="img/newrooma.jpg" alt="NewRoomA" width="200" height="400">
+              <a target="_blank" href="img/newroomb.jpg">
+              <img src="img/newroomb.jpg" alt="NewRoomB" width="200" height="400">
+            </a>
+            <div class="desc">A Basement utility room transformed into a new living space and kitchen!</div>
+          </div>
+          
+          <div class="responsive">
+            <a target="_blank" href="img/pantrya.jpg">
+              <img src="img/pantrya.jpg" alt="PantryA" width="200" height="400">
+              <a target="_blank" href="img/newroomb.jpg">
+              <img src="img/pantryb.jpg" alt="PantryB" width="200" height="400"></a>
+            <div class="desc">A empty storage space reworked into a walk-in pantry!</div>
+          </div>
+
+          <div class="responsive">
+            <a target="_blank" href="img/halfbathb.jpg">
+              <img src="img/halfbathb.jpg" alt="HalfBathB" width="200" height="400">
+              <a target="_blank" href="img/halfbatha.jpg">
+              <img src="img/halfbatha.jpg" alt="HalfBathA" width="200" height="400"></a>
+            <div class="desc">Guest bathroom with new tiles and fitted with a new toilet and a sink!</div>
+          </div>
+
+          <div class="responsive">
+            <img src="img/bathroomb.gif" alt="BathroomB" width="200"  height="400"> 
+            <a target="_blank" href="img/halfbathb.jpg">
+            <img src="img/bathrooma.jpg" alt="BathroomA" width="200" height="400"></a>
+          <div class="desc">New bathroom tiles alongside a new coat of paint and light fixtures!</div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Form-->
+
+    <div id="tab3" class="hidden"> <div id="Contact" class="tabcontent">
+      <div id="contactimg">
+      <h3>Have any questions regarding rates or need a job done? Feel free to inquire Simon or Mich'l in the form below!</h3>      
+        <div id="container">
+          <form class="form-contact">
+              <label for="name">Name:</label> 
+              <input type="text" id="name" placeholder="First and Last Name">
+        
+               <label for="email">Email:</label>
+               <input type="email" id="email" placeholder="Your Email Address">
+          
+               <label for="msg">Message:</label>
+               <textarea id="msg" rows="5" placeholder="Enter Message"></textarea>
+               <input class="btn inln default"  onclick="myFunction()" type="submit" value="Submit">
+            </form>
+       </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+  
+  <footer class="main-footer">
+    <p>All rights reserved by Monday Dads LLC<Span>&#169;</Span></p>
+    <a href="#top">Back to top &raquo;</a>
+  </footer>
+ </body>
+</html>
