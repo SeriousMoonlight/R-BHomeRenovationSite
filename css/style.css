@@ -291,3 +291,25 @@ div.desc {
     margin: 0.4rem 0;
   }
 }
+
+  @media (min-width: 70px) {
+    .clicktab {  
+    text-decoration: underline;  
+    padding: 12px;
+    border-radius: 2.5rem;
+    display: inline-block;
+    background-color: black;
+    border-color: darkslategray ;
+    cursor: pointer;
+    color: whitesmoke;
+    font: 1.20rem 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+}
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
