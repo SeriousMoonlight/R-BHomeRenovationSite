@@ -58,7 +58,9 @@ This was a huge learning lesson from me and to be honest I'd probably remake thi
 (In fact I would rebuild the site with CSS Grid in mind from the start and include a proper company logo with some animated or 
 changing images for the column images as well as more interactive and better optimized gallery).
 The site changed drastically over the course of the program. I was genuinely too embarassed to push my first commit with how bad it looked but I'm also amazed by how much
-it changed as I troubleshooted my issues and implementing the various things I learned.
+it changed as I troubleshooted my issues and implementing the various things I learned. Also as a note to the mentors; I was provided with a fix for the site's display on mobile
+device from a third party source but this fix will not be implemented until the work I've personally done is graded. This fix is prepped locally and ready to be launched post-
+graduation.
 
 -------------------------------
         LICENSING/USAGE
