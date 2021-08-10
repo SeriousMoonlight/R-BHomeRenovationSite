@@ -1,8 +1,9 @@
 /* Fonts  ---- */
 
 @font-face {
-  font-family: 'Big Shoulders Stencil Display', cursive, 'Raleway', sans-serif;
-  src: url('../fonts/Raleway-BlackItalic.ttf') url('../fonts/BigShouldersStencilDisplay-Black.ttf') format('tff');
+  font-family: "Big Shoulders Stencil Display", cursive, "Raleway", sans-serif;
+  src: url("../fonts/Raleway-BlackItalic.ttf")
+    url("../fonts/BigShouldersStencilDisplay-Black.ttf") format("tff");
 }
 
 /* Base Styles ---- */
@@ -12,27 +13,31 @@
 }
 
 html {
-  font-size: 1.25em;
-  background: linear-gradient(90deg, gray, black); 
+  /* font-size: 1.25em; */
+  background: linear-gradient(90deg, gray, black);
 }
 
 body {
   margin: 1rem;
-  font: 300 100%/1.5 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
+  font: 300 100%/1.5 "Big Shoulders Stencil Display", "Raleway", sans-serif;
   color: whitesmoke;
 }
 
-h1, h2 {
-  font: 400 4rem/1.1 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
+h1,
+h2 {
+  font-family: "Big Shoulders Stencil Display", "Raleway", sans-serif;
 }
 
 h1 {
-  text-shadow: 1px 2px 3px rgba(0,10,30,.5);
+  text-shadow: 1px 2px 3px rgba(0, 10, 30, 0.5);
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 2.5rem;
   text-decoration: underline;
+  font-weight: 400;
 }
 
 h3 {
@@ -55,12 +60,13 @@ img {
 header {
   padding: 10vh 1rem;
   margin: -1rem -1rem 1rem;
-  background: url(../img/saw.jpg) center / cover no-repeat darkslategray; 
+  background: url(../img/saw.jpg) center / cover no-repeat darkslategray;
   background-blend-mode: multiply;
   color: white;
 }
 
-header, footer {
+header,
+footer {
   text-align: center;
 }
 
@@ -83,28 +89,47 @@ main {
   width: 25%;
 }
 
+.tab-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Nav buttons */
+.clicktab {
+  text-decoration: underline;
+  padding: 12px;
+  border-radius: 2.5rem;
+  display: inline-block;
+  background-color: black;
+  border-color: darkslategray;
+  cursor: pointer;
+  color: whitesmoke;
+  font: 1.2rem "Big Shoulders Stencil Display", "Raleway", sans-serif;
+  font-weight: bold;
+}
+
 /* Contact Forms ---- */
 
 input,
 textarea {
   font-size: 1em;
   color: #222;
-  font-weight: 300; 
+  font-weight: 300;
   width: 100%;
   border: none;
   height: auto;
   padding: 15px;
   outline: 0;
   margin-bottom: 1.2em;
-  border-radius: .3em;
-  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  border-radius: 0.3em;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.05);
   background-color: whitesmoke;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
 }
 
 label {
   display: block;
-  margin-bottom: 0.5em; 
+  margin-bottom: 0.5em;
   font-weight: bold;
 }
 
@@ -117,7 +142,7 @@ label {
 
 .btn {
   cursor: pointer;
-  font-size: .875em;
+  font-size: 0.875em;
   font-weight: 300;
   color: whitesmoke;
   background-color: darkslategray;
@@ -128,16 +153,16 @@ label {
   text-transform: uppercase;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.tab-container{
+.tab-container {
   border: solid black 1px;
   cursor: pointer;
 }
 
-/* Card Elements */ 
+/* Card Elements */
 
 #worker {
   margin-top: 1rem;
@@ -147,7 +172,7 @@ label {
   border-radius: 12px 12px 12px 12px;
   background: url(../img/backsplash.jpg) center / cover no-repeat;
   color: black;
-  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+  box-shadow: inset 0 0 20px 10px rgba(0, 10, 30, 0.8);
 }
 
 #aboutus {
@@ -155,24 +180,25 @@ label {
   padding: 3% 6%;
   border-top: 5px solid darkslategray;
   border-bottom: 5px solid darkslategray;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/metal.jpg) center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/metal.jpg) center / cover;
   border-radius: 12px 12px 12px 12px;
   color: whitesmoke;
   text-shadow: black bold;
-  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+  box-shadow: inset 0 0 20px 10px rgba(0, 10, 30, 0.8);
 }
 
 #crew {
-  
   margin-top: 1rem;
   padding: 2% 6%;
   border-top: 5px solid darkslategray;
   border-bottom: 5px solid darkslategray;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/tools.jpg) center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/tools.jpg) center / cover;
   border-radius: 12px 12px 12px 12px;
   color: whitesmoke;
   text-shadow: black bold;
-  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+  box-shadow: inset 0 0 20px 10px rgba(0, 10, 30, 0.8);
 }
 
 #contactimg {
@@ -185,7 +211,7 @@ label {
   border-radius: 12px 12px 12px 12px;
   background: url(../img/tools2.jpg) center / cover no-repeat;
   color: black;
-  box-shadow: inset 0 0 10px 10px rgba(0,0,0,.8);
+  box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.8);
 }
 
 div.gallery {
@@ -210,9 +236,12 @@ div.desc {
 
 /* Media Queries ---- */
 
-@media screen and (min-width: 720px) {
+@media only screen and (max-width: 720px) {
   header {
     padding: 12vh 1rem;
+  }
+  h1 {
+    font-size: 3rem;
   }
 
   .column {
@@ -224,43 +253,42 @@ div.desc {
     border-bottom: 5px solid darkslategray;
     border-radius: 0 12px 12px 12px;
     color: whitesmoke;
-    box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+    box-shadow: inset 0 0 20px 10px rgba(0, 10, 30, 0.8);
   }
   .column:first-child {
     justify-content: space-evenly;
     margin-right: calc(4% - 4px);
   }
-}  
+}
 
 @media screen and (max-width: 768px) {
-	#container {
-		width: 92%
-	}
-}
-
-@media screen and (min-width: 480px) {
-  .tab-btn {
-    display: inline;
-    justify-content: space-evenly;
+  #container {
+    width: 92%;
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    padding: 4rem 0.8rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
   .tab-btn {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
   }
-} 
-
-@media (min-width: 480px) {
-  .inln {
-    width: auto;
-    display: inline-block;
-    background-color: darkslategray;
-    border-color: darkslategray ;
-    cursor: pointer;
-    color: whitesmoke;
-    font: 400px 1.75rem 'Big Shoulders Stencil Display', 'Raleway', sans-serif;
+  .clicktab {
+    margin: 0.4rem 0;
   }
 }
 
@@ -284,3 +312,4 @@ div.desc {
       width: 100%;
     }
   }
+
